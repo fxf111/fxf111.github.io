@@ -1,10 +1,30 @@
 <html>
 <head>
-<title>
-Welcome to fxf111's github blog!
-</title>
+    <meta charset="UTF-8">
+    <title>
+        Welcome to fxf111's github blog!
+    </title>
+    <script src="js/utils.js"></script>
+    <style>
+        #nowTime {
+            background-color: #eed;
+            width: 330px;
+            height: 40px;
+            line-height: 40px;
+        }
+    </style>
 </head>
 <body>
 Hi,guys ,welcome to my github blog!
+<p id="nowTime"></p>
+<script>
+    var nowTimeEle = document.getElementById('nowTime');
+    function updateTime() {
+        nowTimeEle.innerHTML=getNowTime();
+    }
+    setInterval(updateTime,1000);
+    updateTime();
+
+</script>
 </body>
 </html>
