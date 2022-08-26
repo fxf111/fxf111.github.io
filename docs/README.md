@@ -1,6 +1,5 @@
----
-home: true
-heroText: fxf111的点滴记录
-actionText: 算法
-actionLink: /algorithm/
----
+
+
+# 首页归档
+- [算法](./algorithm/)
+- [前端杂项](./frontend/)
